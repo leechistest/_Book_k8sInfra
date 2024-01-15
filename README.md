@@ -12,6 +12,8 @@
 > 🔔 **_알림3:_** MetalLB의 [쿠버네티스 인증서](https://kubernetes.io/docs/setup/best-practices/certificates/)의 기본값이 1년인 관계로 OVA의 경우 사용을 못하는 경우가 발생합니다.
 > 이에 OVA를 10년으로 변경하였습니다. 그리고 만약 vagrant up으로 배포한 랩의 사용기간이 1년이 다 되어가는 경우 [인증서를 갱신](https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-certs/)하시기 바랍니다.  
 
+> 🔔 **_알림4:_** 3장 도입부의 Docker 버전과 `signature key`간의 이슈가 해결되었습니다. 자세한 사항은 [다음](https://github.com/sysnet4admin/_Book_k8sInfra/issues/33#issuecomment-1890823571) 내용을 참고하세요  
+
 이 저장소는 [컨테이너 인프라 환경 구축을 위한 쿠버네티스/도커](http://www.yes24.com/Product/Goods/102099414) 책에 실습을 위한 코드를 제공합니다.
 
 각 챕터별로 챕터에서 사용하는 스크립트 및 코드를 제공하고 있으며, 별도로 챕터에서 깊게 다루지 않는 부분은 [다른 저장소](https://github.com/iac-source)에서 다룹니다. 그리고 학습에 도움이 되실만한 문서를 디렉터리 [docs](https://github.com/sysnet4admin/_Book_k8sInfra/tree/main/docs)에 추가하였습니다. (2021.10.24)
@@ -91,8 +93,8 @@
 
 ## 책에서 사용하는 프로그램 번들팩
 `VirtualBox 6.1.12`, `vagrant 2.2.9` 
-- 🗄️  [윈도우 사용자](https://1drv.ms/u/s!Auu_3Z_BinL5enOZ9GNLpYpW9GI?e=Bm81j6)
-- 🗄️  [맥OS 사용자](https://1drv.ms/u/s!Auu_3Z_BinL5eYkQshnmOaaprJA?e=Z7WJwb)
+- 🗄️  [윈도우 사용자](https://1drv.ms/f/s!AhojtZPqfyoFnw1b6J_3q3LG1mht?e=NjuPrz)
+- 🗄️  [맥OS 사용자](https://1drv.ms/f/s!AhojtZPqfyoFnwyiOQWiKq7wSejj?e=kAbgcc)
 
 ## 🔔 베이그런트 설치로 너무 고생하시는 분들을 위한 이미지(OVA) 파일
 현재 책의 쿠버네티스 실습 랩을 Vagrant가 아닌 이미지로 바로 구성할 수 있도록 OVA 이미지를 제공합니다. </br>

@@ -6,7 +6,7 @@ yum install yum-utils -y
 yum install vim-enhanced -y
 yum install git -y
 
-# install docker (ceë²„ì „ ì„¤ì¹˜ë¡œ ë³€ê²½í•¨. k8s 1.18ì— ë§ëŠ” ë²„ì „ì€ < 19.03)
+# install docker (ce¹öÀü ¼³Ä¡·Î º¯°æÇÔ. k8s 1.18¿¡ ¸Â´Â ¹öÀüÀº < 19.03)
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 yum install docker-ce-$2 docker-ce-cli-$2 containerd.io -y && systemctl enable --now docker
 
