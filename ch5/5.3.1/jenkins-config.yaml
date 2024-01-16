@@ -83,10 +83,10 @@ jenkins:
   scmCheckoutRetryCount: 0
   securityRealm: "legacy"
   slaveAgentPort: 50000
-  #updateCenter:
-  #  sites:
-  #  - id: "default"
-  #    url: "https://raw.githubusercontent.com/IaC-Source/Jenkins-updateCenter/main/update-center.json"
+  updateCenter:
+    sites:
+    - id: "default"
+      url: "https://raw.githubusercontent.com/leechistest/Jenkins-updateCenter/main/update-center.json"
   views:
   - all:
       name: "all"
